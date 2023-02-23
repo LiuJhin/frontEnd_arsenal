@@ -24,6 +24,7 @@
 </template>
 
 <script setup lang="ts">
+import { login } from '@/api';
 import {ref} from 'vue'
 
 const loginForm = ref({
@@ -32,7 +33,10 @@ const loginForm = ref({
 })
 
 function submit() {
-  console.log(loginForm.value);
+  login(loginForm).then(res => {
+      console.log(res);
+      
+  })
   
 }
 </script>

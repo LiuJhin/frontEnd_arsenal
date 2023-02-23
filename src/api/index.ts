@@ -1,3 +1,17 @@
-// import $http from '../utils/request';
+import { Request } from '../utils/request'
 
-// export const getData = $http.get('http://jsonplaceholder.typicode.com/posts')
+const request = Request
+
+ export function login(data: any) {
+    return  new request({
+        url: '/admin/login',
+        data,
+        method: "Post",
+    })
+}
+
+// export const get = (data: any) => {
+//     return Request.post('/admin/login', {
+
+//     })
+// }
