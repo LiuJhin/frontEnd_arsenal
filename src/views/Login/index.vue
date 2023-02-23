@@ -1,3 +1,10 @@
+<!--
+ * @Author: J_in
+ * @Date: 2023-02-23 17:06:48
+ * @LastEditors: J_in
+ * @LastEditTime: 2023-02-23 17:29:37
+ * @FilePath: /frontend-arsenal/src/views/Login/index.vue
+-->
 <template>
   <div class="login">
     <div class="content">
@@ -46,7 +53,7 @@ function submit() {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   .content {
     display: flex;
     justify-content: center;

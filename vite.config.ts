@@ -16,6 +16,9 @@ export default defineConfig({
         resolvers: [ElementPlusResolver()],
       }),
   ],
+  define: {
+    'process.env': {}
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
@@ -27,7 +30,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: '43.139.155.177:8201',
+        target: 'http://www.tianheguoyun.com/one-admin',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
