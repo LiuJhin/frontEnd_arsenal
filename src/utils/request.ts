@@ -20,7 +20,7 @@ export class Request {
     this.instance = axios.create(Object.assign(this.baseConfig, config));
 
     this.instance.interceptors.request.use(
-      (config: AxiosRequestConfig) => {
+      (config) => {
         // 一般会请求拦截里面加token，用于后端的验证
         const token = localStorage.getItem("token") as string
         if(token) {
