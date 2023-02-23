@@ -1,13 +1,9 @@
-import { Request } from '../utils/request'
+import Request from '../utils/request'
 
-const request = Request
+// const request = Request
 
- export function login(data: any) {
-    return  new request({
-        url: '/admin/login',
-        data,
-        method: "Post",
-    })
+ export function login(obj: any) {
+    return Request.post('/admin/login',obj)
 }
 
 // export const get = (data: any) => {

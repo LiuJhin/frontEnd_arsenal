@@ -33,9 +33,8 @@ const loginForm = ref({
 })
 
 function submit() {
-  login(loginForm).then(res => {
+  login(loginForm.value).then(res => {
       console.log(res);
-      
   })
   
 }
