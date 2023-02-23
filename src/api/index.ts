@@ -1,3 +1,3 @@
-import $http from '../utils/request';
+// import $http from '../utils/request';
 
-export const getData = $http.get('http://jsonplaceholder.typicode.com/posts')
+// export const getData = $http.get('http://jsonplaceholder.typicode.com/posts')
